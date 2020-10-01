@@ -7,7 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Galeria Flexbox</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
+        }
+
+        html {
+            font-size: 10px;
+            font-family: roboto;
+            color: white;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+            height: 100vh;
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 10vh;
+            align-content: stretch;
+            /* width: 100%;  width 100% wynika z domyslnej wartosci align items: stretch */
+            background-color: black;
+            font-size: 4rem;
+        }
+
+        section {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: red;
+        }
+
+        section div {
+
+            flex-basis: 21%;
+            background-color: green;
+
+
+        }
+
+        img {
+            width: 100%;
+        }
     </style>
 </head>
 
