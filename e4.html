@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .burger {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            width: 90px;
+            height: 70px;
+            background-color: black;
+        }
+
+        span {
+            position: absolute;
+            height: 8px;
+            background-color: white;
+            transition: left .3s, right .3s, transform .3s;
+
+        }
+
+
+
+        span:nth-child(1) {
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        span:nth-child(1).active {
+            right: 102%;
+
+        }
+
+        span:nth-child(4).active {
+            left: 102%;
+        }
+
+        span:nth-child(2),
+        span:nth-child(3) {
+            top: calc(50% - 4px);
+            left: 0;
+            right: 0;
+        }
+
+        span:nth-child(4) {
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        span:nth-child(2).active {
+            transform: rotate(45deg);
+        }
+
+        span:nth-child(3).active {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <script src="script4.js"></script>
+</body>
+
+</html>

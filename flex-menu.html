@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            flex-grow: 1;
+            display: flex;
+            min-height: 10vh;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1400px;
+            /* background-color: red; */
+
+
+
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 17%;
+            height: 5vh;
+            background-color: lightgray;
+            font-size: 14px;
+            font-family: roboto;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                flex-wrap: wrap;
+            }
+
+            div {
+                flex-basis: 100%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>przycisk 1</div>
+        <div>przycisk 2</div>
+        <div>przycisk 3</div>
+        <div>przycisk 4</div>
+        <div>przycisk 5</div>
+    </nav>
+</body>
+
+</html>

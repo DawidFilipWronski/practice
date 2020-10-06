@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <style>
+        body {
+            height: 150vh;
+        }
+
+        .wrapper {
+            margin: 20px 60px;
+        }
+
+        p {
+            line-height: 200%;
+        }
+
+        .burger {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            font-size: 22px;
+            transition: .3s;
+        }
+
+        .burger.on {
+            transform: rotate(-180deg);
+            bottom: 330px;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background-color: black;
+            transition: .3s;
+        }
+
+        nav.on {
+            height: 300px;
+        }
+
+        .jump {
+            animation: jump 1.5s 1s;
+        }
+
+        @keyframes jump {
+            10% {
+                bottom: 340px;
+            }
+
+            20% {
+                bottom: 330px;
+            }
+
+            30% {
+                bottom: 340px;
+            }
+
+            40% {
+                bottom: 330px;
+            }
+
+            50% {
+                bottom: 340px;
+            }
+
+            60% {
+                bottom: 330px;
+            }
+
+            70% {
+                bottom: 340px;
+            }
+
+            80% {
+                bottom: 330px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repudiandae itaque, maxime asperiores
+            eaque vitae incidunt nam dolor facilis molestiae quis ipsum? Adipisci amet doloribus porro laborum! Sint,
+            sit! Sit, ipsum, nobis perferendis neque optio quas facilis aut ad deserunt voluptate doloremque aperiam
+            earum. Nihil accusamus quas, numquam quisquam inventore a. Quo non quidem esse, accusamus odit deserunt
+            neque eius sequi nesciunt nulla facilis! Maiores, nobis quisquam esse perspiciatis sapiente voluptates
+            quidem accusantium dicta earum ipsum quaerat recusandae magni totam. Non nemo fugit ullam obcaecati iste
+            modi quae, error cumque unde maxime eum, deleniti aut cum neque perferendis! Modi iste dolorem unde aliquid
+            id reprehenderit cum explicabo cupiditate nisi nulla nam voluptas illo, libero magni doloremque esse nihil
+            consequatur ut eligendi atque odit numquam? Veniam corrupti minus totam voluptates qui delectus quam cumque
+            repellat tenetur id fuga nesciunt quidem hic deleniti ducimus, dolorem, reprehenderit itaque laborum,
+            inventore dolor ullam voluptatum quod unde. Soluta laudantium aliquam ipsum ut magnam, delectus eos ipsa
+            debitis reiciendis nobis laboriosam consectetur ab aperiam autem corporis, adipisci enim assumenda atque
+            rem. Accusantium, id voluptatibus explicabo quos ducimus laudantium excepturi incidunt quaerat libero
+            temporibus neque? Sunt pariatur aut cupiditate iusto beatae facilis esse dolor commodi quidem incidunt?</p>
+    </div>
+    <nav>
+
+    </nav>
+    <div class="burger">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="script3.js"></script>
+</body>
+
+</html>
+<!-- 
+ZADANIE DLA CIEBIE!!!
+
+1. Strona ma mieć w pionie conajmniej 150% okna przeglądarki (pasek pionowy) 
+2. Menu ma być wysuwane z dołu
+3. Zamiast ikon hamburgera, pobieramy z font-awsome jedną strzałkę
+4. Strałka idzie do góry i obraca się o 180deg, zachowuje tą samą odległość od menu
+5. Menu jest częsciowo widoczne. Ma 300px, domyslnie 30px jest widoczne
+6. Obsługa zdarzenia click JS
+7. Użyj klasy "on" dla elementów, które są aktywne (dodawaj/odejmuj klasę on po kliknięciu)
+
+Strukturę początkową zróbmy razem :)
+ -->
