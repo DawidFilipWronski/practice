@@ -6,8 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        background-color: black;
+    }
+
+    nav a {
+        flex-basis: 30%;
+        flex-grow: 1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    section.start {
+        background-color: royalblue;
+    }
+
+    section.about {
+        background-color: rosybrown;
+    }
+
+    section.contact {
+        background-color: coral;
+    }
+</style>
 
 <body>
+    <nav>
+        <a href="#" class="start">Start</a>
+        <a href="#" class="about">o mnie</a>
+        <a href="#" class="contact">kontakt</a>
+    </nav>
+    <section class="start"></section>
+    <section class="about"></section>
+    <section class="contact"></section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script5.js"></script>
 
 </body>
 
